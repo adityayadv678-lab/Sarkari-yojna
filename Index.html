@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+
+<html lang="hi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>योजनासेतु AI - YojanaSetu</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary":"#a73a00","inverse-on-surface":"#eaf1ff","tertiary-fixed-dim":"#68dba9","on-tertiary-container":"#069669","surface-container-low":"#eff4ff","surface-container":"#e5eeff","surface-dim":"#cbdbf5","secondary-container":"#fd651e","surface-container-high":"#dce9ff","secondary-fixed":"#ffdbce","secondary-fixed-dim":"#ffb599","tertiary-fixed":"#85f8c4","primary-container":"#131b2e","error":"#ba1a1a","tertiary":"#000000","inverse-surface":"#213145","on-secondary-container":"#571a00","outline-variant":"#c6c6cd","on-primary":"#ffffff","tertiary-container":"#002114","on-background":"#0b1c30","on-surface-variant":"#45464d","on-primary-container":"#7c839b","on-secondary-fixed-variant":"#7f2b00","surface-bright":"#f8f9ff","primary":"#000000","on-primary-fixed":"#131b2e","surface":"#f8f9ff","on-secondary-fixed":"#370e00","primary-fixed-dim":"#bec6e0","on-secondary":"#ffffff","outline":"#76777d","inverse-primary":"#bec6e0","surface-tint":"#565e74","surface-container-highest":"#d3e4fe","on-primary-fixed-variant":"#3f465c","on-tertiary-fixed-variant":"#005137","surface-variant":"#d3e4fe","background":"#f8f9ff","on-tertiary":"#ffffff","error-container":"#ffdad6","on-tertiary-fixed":"#002114","on-surface":"#0b1c30","on-error":"#ffffff","on-error-container":"#93000a","surface-container-lowest":"#ffffff","primary-fixed":"#dae2fd"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin-tablet":"1.5rem","space-xl":"2rem","space-xs":"0.5rem","margin-mobile":"1rem","space-3xl":"4rem","gutter":"1.5rem","space-lg":"1.5rem","margin":"2rem","gutter-mobile":"1rem","space-md":"1rem","space-2xl":"3rem","space-sm":"0.75rem","space-2xs":"0.25rem"},fontFamily:{"body-lg":["Inter"],"title-md":["Inter"],"label-caps":["Inter"],"headline-lg":["Inter"],"headline-md":["Inter"],"display-hero":["Inter"],"display-hero-mobile":["Inter"],"label-md":["Inter"],"label-lg":["Inter"],"body-sm":["Inter"],"headline-lg-mobile":["Inter"],"body-md":["Inter"],"headline-sm":["Inter"]},fontSize:{"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"title-md":["18px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"700"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.025em","fontWeight":"800"}],"display-hero-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"800"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary-container text-on-primary border-b border-primary-container px-gutter py-space-2xs text-center"><div class="max-w-[1240px] mx-auto flex flex-wrap items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs mx-auto md:mx-0 text-left"><span class="text-secondary-fixed font-label-caps text-label-caps px-space-xs py-0.5 rounded bg-secondary/30 uppercase tracking-wider">नागरिक सूचना</span><p class="font-label-md text-label-md text-on-primary-container">⚠️ स्वतंत्र नागरिक सहायक पोर्टल | यह वेबसाइट सरकारी विभाग नहीं है | सभी आवेदन केवल आधिकारिक सरकारी पोर्टल पर ही करें</p></div><div class="hidden lg:flex items-center gap-space-sm"><span class="inline-flex items-center gap-1 font-label-caps text-label-caps text-tertiary-fixed-dim"><span class="material-symbols-outlined text-[14px]">verified</span>सुरक्षित एवं सत्यापित डेटा</span><span class="font-label-caps text-label-caps text-on-primary-container">|</span><span class="font-label-caps text-label-caps text-on-primary-container">सहायता: 1915 / 1930</span></div></div></div><div class="h-20 max-w-[1240px] mx-auto px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><img alt="YojanaSetu AI Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UhEWbJaRbmo33IiD4QUADF86yuRiTrq3nJnH9YyvuU4-ybPjDTB9SfdlrowwB0UXYkmPrQtTPMojTw7eWjORW33gYYkqOnwO7W12GNa_AEGzlQOCX8_lb_GmyjjbCHRrwDlJSyTQdZmnnPPM8SRtxA-R-9TXdpo6I9gkRY5w4oGiTNvRVMMxekBXptp4nR_z9xzFRVY13Is-GUF0RHytYJ7_mFHw8oFR-Mi5P7B2A"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-on-surface font-bold tracking-tight">योजनासेतु <span class="text-secondary">AI</span></span><span class="hidden xl:inline-block font-label-caps text-label-caps px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface-variant">AI-संचालित नागरिक सेतु</span></div><span class="font-label-caps text-[10px] text-on-surface-variant tracking-wider uppercase">Sovereign Citizen Infrastructure</span></div></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary rounded-lg font-label-lg"><a class="px-space-sm py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="home" href="#">होम / Home</a><a class="px-space-sm py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="ai-scheme-finder" href="#">AI योजना खोजक</a><a class="px-space-sm py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="all-schemes" href="#">सभी योजनाएँ</a><a aria-current="page" class="px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary rounded-lg font-label-lg" data-path="document-checker" href="#">दस्तावेज़ चेकर</a><a class="px-space-sm py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="saved-schemes" href="#">सहेजी गई योजनाएँ</a><a class="px-space-sm py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="safety-and-fraud-protection" href="#">सुरक्षा एवं धोखाधड़ी बचाव</a></nav><div class="flex items-center gap-space-sm"><button class="flex items-center gap-space-2xs px-space-sm py-1.5 rounded-full bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" type="button"><span class="material-symbols-outlined text-[16px]">translate</span><span>हिंदी / ENG</span></button><a class="hidden sm:inline-flex items-center gap-space-2xs px-space-sm py-1.5 rounded-lg bg-error-container text-on-error-container hover:bg-error hover:text-on-error transition-colors font-label-md text-label-md" data-path="emergency-helpline" href="#"><span class="material-symbols-outlined text-[16px]">sos</span><span>हेल्पलाइन</span></a><div class="flex items-center gap-space-xs pl-space-xs border-l border-outline-variant/30"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuU_W0WAe-5YD8Es1WjnrDbYnH5j_7FmOLGiwP12J54Lr6l-gU-0JO_5Fg-VXdGxU7h4BRAeSau0TGo7bF7gqlITQpPGxkqkwdFDxcnw8DNZ3yXhHiuB7Ovdqe0ko7O7tOiURhNukc_K_-E3Ll6Mtgbj7rdIkMplRrjCH_3bX610f-1o-MwQulMWLjMx59CccGpOwIxb2o15NIb7P7Mk48iiYOkjFcPB_eHibIpoI"/><div class="hidden md:flex flex-col text-left"><span class="font-label-caps text-label-caps text-on-surface">नागरिक प्रोफ़ाइल</span><span class="font-label-caps text-[10px] text-on-tertiary-container font-semibold">सत्यापित नागरिक</span></div></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Canvas Decor -->
+<div class="relative w-full overflow-hidden pb-space-3xl">
+<div class="absolute top-0 right-0 w-[520px] h-[520px] bg-secondary-container/10 rounded-full blur-3xl pointer-events-none -mr-40 -mt-20"></div>
+<div class="absolute top-48 left-0 w-[420px] h-[420px] bg-tertiary-fixed-dim/20 rounded-full blur-3xl pointer-events-none -ml-32"></div>
+<div class="max-w-[1240px] mx-auto px-gutter w-full relative z-10 pt-space-lg">
+<!-- Top Utility / Breadcrumb Stripe -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-lg">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-secondary">home</span>होम</span>
+<span>/</span>
+<span class="text-on-surface font-semibold">दस्तावेज़ चेकलिस्ट एवं आवेदन ट्रैकर</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded bg-surface-container-high text-on-surface font-label-caps text-label-caps">
+<span class="inline-block w-2 h-2 rounded-full bg-on-tertiary-container animate-pulse"></span>
+            नागरिक वॉल्ट सिंक: सक्रिय
+          </span>
+<span class="text-on-surface-variant font-label-md text-label-md">अंतिम अद्यतन: 24 मई 2025</span>
+</div>
+</div>
+<!-- Main Headline & Quick Readiness Bento Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch mb-space-2xl">
+<!-- Left Hero Overview Column (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col justify-between p-space-xl bg-surface-container-lowest rounded-2xl shadow-sm">
+<div>
+<div class="inline-flex items-center gap-2 px-space-sm py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed mb-space-md font-label-caps text-label-caps uppercase">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+              नागरिक डिजिटल तैयारी इंजन
+            </div>
+<h1 class="font-display-hero-mobile lg:font-display-hero text-display-hero-mobile lg:text-display-hero font-extrabold text-on-surface tracking-tight leading-tight mb-space-xs">
+              📋 स्मार्ट दस्तावेज़ चेकलिस्ट एवं आवेदन तैयारी
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mt-space-xs">
+              सरकारी योजनाओं में आवेदन से पूर्व अपने आवश्यक दस्तावेज़ जांचें और तैयारी प्रतिशत देखें। सही कागजात के बिना आवेदन अस्वीकृत होने से बचाएं।
+            </p>
+</div>
+<!-- Micro Highlights -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-lg mt-space-md border-t-0">
+<div class="p-space-sm rounded-xl bg-surface-container-low">
+<span class="font-label-caps text-label-caps text-on-surface-variant block uppercase">कुल दस्तावेज़</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface">6 प्रपत्र</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low">
+<span class="font-label-caps text-label-caps text-on-tertiary-container block uppercase">पूर्ण / सत्यापित</span>
+<span class="font-headline-md text-headline-md font-bold text-on-tertiary-container">4 उपलब्ध</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low">
+<span class="font-label-caps text-label-caps text-secondary block uppercase">ध्यान आवश्यक</span>
+<span class="font-headline-md text-headline-md font-bold text-secondary">2 लंबित</span>
+</div>
+</div>
+</div>
+<!-- Right: Interactive Readiness Gauge Card (5 Cols) -->
+<div class="lg:col-span-5 bg-primary-container text-on-primary rounded-2xl p-space-xl flex flex-col justify-between shadow-md relative overflow-hidden">
+<div class="absolute -right-8 -bottom-8 w-44 h-44 bg-surface-tint/10 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps text-on-primary-container tracking-wider uppercase">आवेदन तत्परता स्कोर</span>
+<span class="px-space-xs py-0.5 rounded text-label-caps font-label-caps bg-on-tertiary-container text-on-primary">
+                माध्यम तैयारी (Moderate)
+              </span>
+</div>
+<h2 class="font-title-md text-title-md font-bold text-on-primary mb-space-xs">
+              आपके आवेदन की तैयारी: 4/6 दस्तावेज़ तैयार
+            </h2>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+              जाति प्रमाण पत्र एवं कॉलेज अटेस्टेशन अपलोड होते ही आपकी पात्रता 100% हो जाएगी।
+            </p>
+</div>
+<!-- Circular + Horizontal Visual Metric Cluster -->
+<div class="my-space-md p-space-md rounded-xl bg-surface-container-lowest/5 backdrop-blur-sm flex items-center gap-space-md">
+<!-- Inline SVG Gauge -->
+<div class="relative w-20 h-20 shrink-0 flex items-center justify-center">
+<svg class="w-20 h-20 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-on-primary-container/30" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-tertiary-fixed-dim" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="67, 100" stroke-linecap="round" stroke-width="3.8"></path>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-headline-sm text-headline-sm font-bold text-on-primary leading-none">67%</span>
+<span class="font-label-caps text-[9px] text-tertiary-fixed-dim uppercase mt-0.5">पूर्ण</span>
+</div>
+</div>
+<div class="flex-1 space-y-space-2xs">
+<div class="flex justify-between font-label-md text-label-md">
+<span class="text-on-primary-container">प्रगति स्तर</span>
+<span class="text-tertiary-fixed-dim font-bold">67% पूर्ण</span>
+</div>
+<div class="w-full bg-surface-container-lowest/20 rounded-full h-2.5 overflow-hidden">
+<div class="bg-tertiary-fixed-dim h-full rounded-full transition-all duration-700" style="width: 67%"></div>
+</div>
+<span class="font-label-caps text-[10px] text-on-primary-container block">
+                स्वीकृति संभावना: उच्च (डीबीटी सक्रिय)
+              </span>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between text-on-primary-container font-label-md text-label-md">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">lock</span>
+              डिजीलॉकर द्वारा सुरक्षित प्रमाणित
+            </span>
+<button class="text-secondary-fixed hover:text-on-primary underline font-semibold cursor-pointer transition-colors" onclick="alert('डिजीलॉकर से स्वतः सिंक प्रक्रिया प्रारंभ की गई है।')" type="button">
+              पुनः स्कैन करें
+            </button>
+</div>
+</div>
+</div>
+<!-- Action Toolbar (Pinned / Top Level Flow) -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm mb-space-2xl flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="px-space-md py-2.5 rounded-lg bg-secondary text-on-secondary font-label-lg text-label-lg hover:bg-secondary-container transition-all flex items-center gap-2 shadow-sm cursor-pointer" onclick="showAddDocModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+            नया दस्तावेज़ जोड़ें
+          </button>
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-container-highest transition-colors flex items-center gap-2 cursor-pointer" onclick="window.print()" type="button">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+            चेकलिस्ट PDF डाउनलोड करें
+          </button>
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-container-highest transition-colors flex items-center gap-2 cursor-pointer" onclick="showTrackSchemeModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">post_add</span>
+            नई योजना ट्रैक करें
+          </button>
+</div>
+<div class="flex items-center gap-space-xs">
+<a class="px-space-md py-2.5 rounded-lg bg-surface-container-low text-error hover:bg-error-container hover:text-on-error-container font-label-lg text-label-lg transition-colors flex items-center gap-1.5" data-path="emergency-helpline" href="#">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+            सहायता हेल्पलाइन (1915 / 14443)
+          </a>
+</div>
+</div>
+<!-- Section: Smart Timely Notifications & Alerts (3 Cards Grid) -->
+<div class="mb-space-2xl">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">campaign</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+              स्मार्ट अलर्ट एवं समय-सीमा सूचनाएँ (Timely Alerts)
+            </h2>
+</div>
+<span class="font-label-caps text-label-caps px-space-xs py-1 rounded bg-surface-container-high text-on-surface-variant uppercase">
+            लाइव अपडेट
+          </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Alert 1: Official Extension -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-start gap-space-sm mb-space-sm">
+<span class="p-2 rounded-xl bg-surface-container text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+</span>
+<div>
+<span class="font-label-caps text-[10px] text-secondary font-bold uppercase tracking-wider block">आधिकारिक समय-सीमा विस्तार</span>
+<p class="font-title-md text-label-lg font-bold text-on-surface mt-0.5">
+                  PM-KISAN 17वीं किस्त e-KYC
+                </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  कृषि मंत्रालय के निर्देशानुसार e-KYC की अंतिम तिथि <strong class="text-on-surface">31 मई 2025</strong> तक बढ़ा दी गई है। OTP या CSC बायोमेट्रिक द्वारा पूर्ण करें।
+                </p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-caps text-[11px] text-on-tertiary-container font-bold">शेष दिन: 7 दिन</span>
+<a class="font-label-md text-label-md text-secondary hover:underline flex items-center gap-0.5" href="https://pmkisan.gov.in" rel="noopener noreferrer" target="_blank">
+                e-KYC करें <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Alert 2: Urgent Reminder -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-start gap-space-sm mb-space-sm">
+<span class="p-2 rounded-xl bg-error-container text-error shrink-0">
+<span class="material-symbols-outlined text-[20px]">timer</span>
+</span>
+<div>
+<span class="font-label-caps text-[10px] text-error font-bold uppercase tracking-wider block">अति महत्वपूर्ण रिमाइंडर</span>
+<p class="font-title-md text-label-lg font-bold text-on-surface mt-0.5">
+                  राष्ट्रीय छात्रवृत्ति बॉयोमीट्रिक प्रमाणीकरण
+                </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  NMMSS छात्रवृत्ति पोर्टल पर संस्थान स्तर पर बायोमेट्रिक प्रमाणीकरण <strong class="text-error">5 दिनों में समाप्त</strong> हो रहा है। नोडल शिक्षक से तुरंत संपर्क करें।
+                </p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-caps text-[11px] text-error font-bold">अंतिम तिथि: 30 अप्रैल</span>
+<a class="font-label-md text-label-md text-error hover:underline flex items-center gap-0.5" href="https://scholarships.gov.in" rel="noopener noreferrer" target="_blank">
+                दिशा-निर्देश देखें <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Alert 3: Fraud Security Notice -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-start gap-space-sm mb-space-sm">
+<span class="p-2 rounded-xl bg-primary-container text-on-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">shield</span>
+</span>
+<div>
+<span class="font-label-caps text-[10px] text-secondary-container font-bold uppercase tracking-wider block">साइबर सतर्कता बुलेटिन</span>
+<p class="font-title-md text-label-lg font-bold text-on-surface mt-0.5">
+                  14 फर्जी टेलीग्राम ग्रुप ब्लॉक किए गए
+                </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  गृह मंत्रालय एवं साइबर सेल द्वारा ऐसे ग्रुप हटाए गए जो नकली PM-मुद्रा लोन स्वीकृति पत्र और शुल्क मांग रहे थे। सरकारी योजनाएं निःशुल्क हैं।
+                </p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-caps text-[11px] text-on-surface-variant">हेल्पलाइन: 1930</span>
+<a class="font-label-md text-label-md text-secondary hover:underline flex items-center gap-0.5" data-path="safety-and-fraud-protection" href="#">
+                सावधानी रिपोर्ट <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Section: Interactive Document Checklist Matrix -->
+<div class="mb-space-3xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">checklist_rtl</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">
+                दस्तावेज़ तत्परता आव्यूह (Interactive Checklist Matrix)
+              </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+              प्रत्येक दस्तावेज़ की स्थिति को अद्यतन करें। सिस्टम स्वतः गणना करके आपकी तत्परता निर्धारित करता है।
+            </p>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 bg-surface-container-low p-1.5 rounded-xl">
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-lowest shadow-sm font-label-md text-label-md text-on-surface font-semibold" type="button">
+              सभी (6)
+            </button>
+<button class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md" type="button">
+              लंबित (2)
+            </button>
+<button class="px-space-sm py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md" type="button">
+              प्रमाणित (4)
+            </button>
+</div>
+</div>
+<!-- Checklist Grid / Rows -->
+<div class="space-y-space-sm" id="checklistContainer">
+<!-- Doc 1: Aadhaar Card -->
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm transition-all hover:shadow-md flex flex-col lg:flex-row lg:items-center justify-between gap-space-md" data-doc-id="aadhaar">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[26px]">badge</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-caps text-label-caps px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant">अनिवार्य पहचान</span>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">
+                    1. आधार कार्ड (Aadhaar Card)
+                  </h3>
+<span class="inline-flex items-center gap-1 font-label-caps text-[11px] text-on-tertiary-container bg-surface-container-low px-2 py-0.5 rounded-full font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> डिजीलॉकर सत्यापित
+                  </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                  आधार से मोबाइल नंबर <span class="font-semibold text-on-surface">98*** ***12</span> लिंक एवं सक्रिय है। जनसांख्यिकी डेटा अद्यतन।
+                </p>
+<div class="flex flex-wrap items-center gap-space-md mt-space-xs font-label-md text-label-md text-on-surface-variant">
+<span>प्रकार: UIDAI 12-अंक</span>
+<span>•</span>
+<span>e-KYC सामंजस्य: 100% सही</span>
+</div>
+</div>
+</div>
+<!-- Status Controls -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<div class="inline-flex p-1 bg-surface-container-low rounded-xl">
+<button class="px-space-sm py-1.5 rounded-lg bg-on-tertiary-container text-on-tertiary font-label-md text-label-md font-semibold flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span>
+                  उपलब्ध है
+                </button>
+<button class="px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md" type="button">
+                  नहीं है
+                </button>
+<button class="px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md" type="button">
+                  प्रक्रिया में
+                </button>
+</div>
+<button class="p-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" title="विवरण जांचें" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- Doc 2: Income Certificate -->
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm transition-all hover:shadow-md flex flex-col lg:flex-row lg:items-center justify-between gap-space-md" data-doc-id="income">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[26px]">request_quote</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-caps text-label-caps px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant">आय पात्रता</span>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">
+                    2. आय प्रमाण पत्र (Income Certificate)
+                  </h3>
+<span class="inline-flex items-center gap-1 font-label-caps text-[11px] text-on-tertiary-container bg-surface-container-low px-2 py-0.5 rounded-full font-semibold">
+<span class="material-symbols-outlined text-[14px]">event_available</span> वैध (Active)
+                  </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                  तहसीलदार द्वारा निर्गत। घोषित वार्षिक आय: <span class="font-bold text-on-surface">₹1,80,000 (1.8 लाख)</span>।
+                </p>
+<div class="flex flex-wrap items-center gap-space-md mt-space-xs font-label-md text-label-md text-on-surface-variant">
+<span>प्रमाणपत्र सं: INC/2023/849201</span>
+<span>•</span>
+<span class="text-on-tertiary-container font-semibold">वैधता: मार्च 2026 तक</span>
+</div>
+</div>
+</div>
+<!-- Status Controls -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<div class="inline-flex p-1 bg-surface-container-low rounded-xl">
+<button class="px-space-sm py-1.5 rounded-lg bg-on-tertiary-container text-on-tertiary font-label-md text-label-md font-semibold flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span>
+                  उपलब्ध है
+                </button>
+<button class="px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md" type="button">
+                  नहीं है
+                </button>
+<button class="px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md" type="button">
+                  प्रक्रिया में
+                </button>
+</div>
+<button class="p-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" title="दस्तावेज़ देखें" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- Doc 3: Bank Account & NPCI DBT -->
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm transition-all hover:shadow-md flex flex-col lg:flex-row lg:items-center justify-between gap-space-md" data-doc-id="bank">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[26px]">account_balance</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-caps text-label-caps px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant">वित्तीय अंतरण</span>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">
+                    3. बैंक खाता विवरण एवं NPCI DBT मैपिंग
+                  </h3>
+<span class="inline-flex items-center gap-1 font-label-caps text-[11px] text-on-tertiary-container bg-surface-container-low px-2 py-0.5 rounded-full font-semibold">
+<span class="material-symbols-outlined text-[14px]">sync_alt</span> NPCI सक्रिय
+                  </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                  भारतीय स्टेट बैंक (SBI) मुख्य शाखा खाता <span class="font-semibold text-on-surface">******4412</span> आधार से सीडेड व डीबीटी हेतु सक्रिय है।
+                </p>
+<div class="flex flex-wrap items-center gap-space-md mt-space-xs font-label-md text-label-md text-on-surface-variant">
+<span>IFSC: SBIN0001290</span>
+<span>•</span>
+<span>PFMS स्टेटस: वैलिडेटेड</span>
+</div>
+</div>
+</div>
+<!-- Status Controls -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<div class="inline-flex p-1 bg-surface-container-low rounded-xl">
+<button class="px-space-sm py-1.5 rounded-lg bg-on-tertiary-container text-on-tertiary font-label-md text-label-md font-semibold flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span>
+                  उपलब्ध है
+                </button>
+<button class="px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md" type="button">
+                  नहीं है
+                </button>
+<button class="px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md" type="button">
+                  प्रक्रिया में
+                </button>
+</div>
+<button class="p-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" title="बैंक विवरण" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- Doc 4: Domicile Certificate -->
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm transition-all hover:shadow-md flex flex-col lg:flex-row lg:items-center justify-between gap-space-md" data-doc-id="domicile">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[26px]">home_pin</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-caps text-label-caps px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant">स्थानीय निवास</span>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">
+                    4. निवास / डोमिसाइल प्रमाण पत्र (Domicile)
+                  </h3>
+<span class="inline-flex items-center gap-1 font-label-caps text-[11px] text-on-tertiary-container bg-surface-container-low px-2 py-0.5 rounded-full font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span> सक्षम प्राधिकारी निर्गत
+                  </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                  उप-जिलाधिकारी कार्यालय द्वारा डिजिटल हस्ताक्षरित मूल निवास प्रमाण पत्र। स्थायी वैधता।
+                </p>
+<div class="flex flex-wrap items-center gap-space-md mt-space-xs font-label-md text-label-md text-on-surface-variant">
+<span>राज्य: उत्तर प्रदेश / उत्तराखंड</span>
+<span>•</span>
+<span>क्रमांक: DOM/2021/77321</span>
+</div>
+</div>
+</div>
+<!-- Status Controls -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<div class="inline-flex p-1 bg-surface-container-low rounded-xl">
+<button class="px-space-sm py-1.5 rounded-lg bg-on-tertiary-container text-on-tertiary font-label-md text-label-md font-semibold flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span>
+                  उपलब्ध है
+                </button>
+<button class="px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md" type="button">
+                  नहीं है
+                </button>
+<button class="px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md" type="button">
+                  प्रक्रिया में
+                </button>
+</div>
+<button class="p-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" title="प्रमाण पत्र" type="button">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- Doc 5: Caste Certificate (MISSING ACTION ITEM) -->
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm transition-all hover:shadow-md flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-secondary-fixed/10" data-doc-id="caste">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-2xl bg-error-container text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">warning</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-caps text-label-caps px-space-xs py-0.5 rounded bg-error-container text-error">आवश्यक कमी</span>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">
+                    5. जाति प्रमाण पत्र (Caste Certificate)
+                  </h3>
+<span class="inline-flex items-center gap-1 font-label-caps text-[11px] text-error bg-error-container/60 px-2 py-0.5 rounded-full font-bold">
+                    ⚠️ उपलब्ध नहीं है
+                  </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                  आरक्षित वर्ग छात्रवृत्ति एवं विशेष योजनाओं के लाभ हेतु आवश्यक। वर्तमान में आपके प्रोफाइल में संलग्न नहीं है।
+                </p>
+<div class="p-space-sm rounded-xl bg-surface-container-lowest shadow-sm mt-space-xs flex flex-wrap items-center justify-between gap-space-xs">
+<span class="font-label-md text-label-md text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">touch_app</span>
+                    कार्रवाई: ई-डिस्ट्रिक्ट पोर्टल से तत्काल 7 दिन में बनवाएं
+                  </span>
+<a class="px-space-sm py-1 rounded bg-secondary text-on-secondary font-label-caps text-label-caps hover:bg-secondary-container transition-colors flex items-center gap-1" href="https://edistrict.up.gov.in" rel="noopener noreferrer" target="_blank">
+                    ई-डिस्ट्रिक्ट आवेदन लिंक
+                    <span class="material-symbols-outlined text-[13px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Status Controls -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<div class="inline-flex p-1 bg-surface-container-low rounded-xl">
+<button class="px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md" type="button">
+                  उपलब्ध है
+                </button>
+<button class="px-space-sm py-1.5 rounded-lg bg-error text-on-error font-label-md text-label-md font-semibold flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+                  नहीं है
+                </button>
+<button class="px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md" type="button">
+                  प्रक्रिया में
+                </button>
+</div>
+<button class="p-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" title="दस्तावेज़ सहायता" type="button">
+<span class="material-symbols-outlined text-[20px]">help_outline</span>
+</button>
+</div>
+</div>
+<!-- Doc 6: Academic Marksheet & Bonafide (IN PROGRESS) -->
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm transition-all hover:shadow-md flex flex-col lg:flex-row lg:items-center justify-between gap-space-md" data-doc-id="academic">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[26px]">school</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-caps text-label-caps px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant">शैक्षणिक अभिलेख</span>
+<h3 class="font-title-md text-title-md font-bold text-on-surface">
+                    6. शैक्षणिक मार्कशीट / संस्थागत बोनाफाइड
+                  </h3>
+<span class="inline-flex items-center gap-1 font-label-caps text-[11px] text-secondary bg-secondary-fixed px-2 py-0.5 rounded-full font-bold">
+                    🔄 प्रक्रिया में
+                  </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                  कक्षा 12वीं अंकपत्र एवं वर्तमान सत्र का बोनाफाइड प्रमाण पत्र। कॉलेज प्रशासनिक कार्यालय से अटेस्टेशन लंबित है।
+                </p>
+<div class="flex flex-wrap items-center gap-space-md mt-space-xs font-label-md text-label-md text-on-surface-variant">
+<span>अपेक्षित प्राप्ति तिथि: 28 मई 2025</span>
+<span>•</span>
+<span>सत्यापन अधिकारी: प्राचार्य / रजिस्ट्रार</span>
+</div>
+</div>
+</div>
+<!-- Status Controls -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<div class="inline-flex p-1 bg-surface-container-low rounded-xl">
+<button class="px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md" type="button">
+                  उपलब्ध है
+                </button>
+<button class="px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md" type="button">
+                  नहीं है
+                </button>
+<button class="px-space-sm py-1.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-semibold flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+                  प्रक्रिया में
+                </button>
+</div>
+<button class="p-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" title="स्थिति जांचें" type="button">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Section: Personal Application Tracker (सहेजी गई योजनाएं और स्टेटस) -->
+<div class="mb-space-3xl">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm mb-space-md">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">view_timeline</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">
+                व्यक्तिगत आवेदन स्थिति ट्रैकर (Personal Tracker)
+              </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+              आपके द्वारा सहेजे गए सक्रिय सरकारी आवेदनों की प्रगति, संदर्भ संख्या और आगामी कार्रवाई।
+            </p>
+</div>
+<button class="px-space-sm py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors flex items-center gap-1.5 shrink-0" onclick="showTrackSchemeModal()" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+            नई योजना जोड़ें
+          </button>
+</div>
+<!-- Strict Citizen Disclaimer Banner -->
+<div class="p-space-md rounded-2xl bg-surface-container-high text-on-surface mb-space-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5">info</span>
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase font-bold block">महत्वपूर्ण नागरिक स्पष्टीकरण</span>
+<p class="font-body-sm text-body-sm text-on-surface mt-0.5 leading-relaxed">
+              नोट: यह आपके द्वारा स्वयं दर्ज किया जाने वाला व्यक्तिगत ट्रैकर है। यह आधिकारिक सरकारी डेटाबेस से लिंक नहीं है। आधिकारिक वास्तविक स्थिति जानने हेतु संबंधित विभागीय पोर्टल पर लॉगिन करें।
+            </p>
+</div>
+</div>
+<!-- Tracker Cards Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg items-stretch">
+<!-- Scheme 1: PM-KISAN Samman Nidhi -->
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm flex flex-col justify-between transition-all hover:shadow-md">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant uppercase">
+                  कृषि एवं किसान कल्याण
+                </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-caps text-[10px] font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> चरण 4/5
+                </span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface mb-1">
+                पीएम-किसान सम्मान निधि
+              </h3>
+<p class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase mb-space-md">
+                PM-KISAN Samman Nidhi (6,000 वार्षिक)
+              </p>
+<!-- Progress bar -->
+<div class="space-y-1 mb-space-md">
+<div class="flex justify-between font-label-caps text-[11px] text-on-surface-variant">
+<span>दस्तावेज़ अपलोड पूर्ण</span>
+<span class="font-bold text-on-surface">80% संपन्न</span>
+</div>
+<div class="w-full bg-surface-container-low rounded-full h-2">
+<div class="bg-on-tertiary-container h-full rounded-full" style="width: 80%"></div>
+</div>
+</div>
+<!-- Metadata Grid -->
+<div class="space-y-space-xs bg-surface-container-low p-space-sm rounded-xl mb-space-md font-body-sm text-body-sm">
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">संदर्भ संख्या:</span>
+<span class="font-semibold text-on-surface font-mono">UK9823412</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">वर्तमान स्थिति:</span>
+<span class="font-semibold text-secondary">आधिकारिक पोर्टल पर समीक्षाधीन</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">अंतिम तारीख:</span>
+<span class="font-semibold text-on-surface">15 मई 2025</span>
+</div>
+<div class="pt-space-2xs text-on-surface-variant">
+<span class="text-[11px] font-label-caps uppercase block text-outline">नोट्स / टिप्पणी:</span>
+<span class="font-medium text-on-surface">"पटवारी एवं भूलेख सत्यापन शेष"</span>
+</div>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<a class="px-space-sm py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center gap-1" href="https://pmkisan.gov.in" rel="noopener noreferrer" target="_blank">
+                पोर्टल लॉगिन
+                <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+<button class="font-label-md text-label-md text-secondary hover:underline cursor-pointer" type="button">
+                स्टेटस बदलें
+              </button>
+</div>
+</div>
+<!-- Scheme 2: National Means-cum-Merit Scholarship (NMMSS) -->
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm flex flex-col justify-between transition-all hover:shadow-md">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant uppercase">
+                  शिक्षा मंत्रालय (MoE)
+                </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-caps text-[10px] font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> चरण 2/5
+                </span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface mb-1">
+                राष्ट्रीय साधन-सह-योग्यता छात्रवृत्ति
+              </h3>
+<p class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase mb-space-md">
+                NMMSS Scholarship (₹12,000 / वर्ष)
+              </p>
+<!-- Progress bar -->
+<div class="space-y-1 mb-space-md">
+<div class="flex justify-between font-label-caps text-[11px] text-on-surface-variant">
+<span>प्रपत्र भरा गया</span>
+<span class="font-bold text-on-surface">40% संपन्न</span>
+</div>
+<div class="w-full bg-surface-container-low rounded-full h-2">
+<div class="bg-secondary h-full rounded-full" style="width: 40%"></div>
+</div>
+</div>
+<!-- Metadata Grid -->
+<div class="space-y-space-xs bg-surface-container-low p-space-sm rounded-xl mb-space-md font-body-sm text-body-sm">
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">संदर्भ संख्या:</span>
+<span class="font-semibold text-on-surface font-mono">NSP2025/9912</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">वर्तमान स्थिति:</span>
+<span class="font-semibold text-on-surface">स्कूल स्तर पर सत्यापन</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">आगामी तिथि:</span>
+<span class="font-semibold text-error">30 अप्रैल 2025</span>
+</div>
+<div class="pt-space-2xs text-on-surface-variant">
+<span class="text-[11px] font-label-caps uppercase block text-outline">नोट्स / टिप्पणी:</span>
+<span class="font-medium text-on-surface">"संस्था प्रमुख द्वारा बायोमेट्रिक अनुमोदन शेष"</span>
+</div>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<a class="px-space-sm py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center gap-1" href="https://scholarships.gov.in" rel="noopener noreferrer" target="_blank">
+                NSP पोर्टल
+                <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+<button class="font-label-md text-label-md text-secondary hover:underline cursor-pointer" type="button">
+                स्टेटस बदलें
+              </button>
+</div>
+</div>
+<!-- Scheme 3: PM Mudra Yojana (Shishu Loan) -->
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm flex flex-col justify-between transition-all hover:shadow-md">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant uppercase">
+                  वित्तीय सेवाएं / MSME
+                </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-caps text-[10px] font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> चरण 1/5
+                </span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface mb-1">
+                पीएम मुद्रा योजना (शिशु लोन)
+              </h3>
+<p class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase mb-space-md">
+                PMMY Shishu Micro Credit (upto ₹50,000)
+              </p>
+<!-- Progress bar -->
+<div class="space-y-1 mb-space-md">
+<div class="flex justify-between font-label-caps text-[11px] text-on-surface-variant">
+<span>कागजात तैयार</span>
+<span class="font-bold text-on-surface">20% संपन्न</span>
+</div>
+<div class="w-full bg-surface-container-low rounded-full h-2">
+<div class="bg-secondary h-full rounded-full" style="width: 20%"></div>
+</div>
+</div>
+<!-- Metadata Grid -->
+<div class="space-y-space-xs bg-surface-container-low p-space-sm rounded-xl mb-space-md font-body-sm text-body-sm">
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">संदर्भ संख्या:</span>
+<span class="font-semibold text-on-surface font-mono">MUDR/2025/APP71</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">वर्तमान स्थिति:</span>
+<span class="font-semibold text-on-surface">बैंक शाखा विजिट निर्धारित</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">संबंधित बैंक:</span>
+<span class="font-semibold text-on-surface">PNB Main Branch (सिविल लाइन्स)</span>
+</div>
+<div class="pt-space-2xs text-on-surface-variant">
+<span class="text-[11px] font-label-caps uppercase block text-outline">नोट्स / टिप्पणी:</span>
+<span class="font-medium text-on-surface">"दुकान कोटेशन व प्रोजेक्ट रिपोर्ट प्रति संलग्न करें"</span>
+</div>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<a class="px-space-sm py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center gap-1" href="https://www.mudra.org.in" rel="noopener noreferrer" target="_blank">
+                मुद्रा पोर्टल
+                <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+<button class="font-label-md text-label-md text-secondary hover:underline cursor-pointer" type="button">
+                स्टेटस बदलें
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- FAQ & Citizen Guidance Section with Visual Illustration Placeholder -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-sm mb-space-2xl grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-8 space-y-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">help_center</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+              दस्तावेज़ एवं आवेदन सहायता मार्गदर्शिका (Citizen FAQ)
+            </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-low">
+<h3 class="font-label-lg text-label-lg font-bold text-on-surface mb-1">
+                यदि जाति प्रमाण पत्र उपलब्ध न हो तो क्या करें?
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                आप अपने राज्य के ई-डिस्ट्रिक्ट पोर्टल या नजदीकी सीएससी (CSC) केंद्र से 7-10 दिनों में नया प्रमाण पत्र बनवा सकते हैं। आवेदन संख्या से भी कुछ पोर्टल पर प्रोविजनल छूट मिलती है।
+              </p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low">
+<h3 class="font-label-lg text-label-lg font-bold text-on-surface mb-1">
+                NPCI और Aadhaar DBT सीडिंग में क्या अंतर है?
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                केवल बैंक खाते में आधार लिंक होना पर्याप्त नहीं है; सरकारी धन सीधे आने हेतु बैंक शाखा जाकर ‘DBT Mandate’ फॉर्म भरकर NPCI मैपर पर खाता सक्रिय करवाना अनिवार्य है।
+              </p>
+</div>
+</div>
+</div>
+<!-- Visual / Photographic Citizen Touchpoint -->
+<div class="lg:col-span-4 flex flex-col items-center text-center p-space-md rounded-xl bg-surface-container-high">
+<img class="w-full h-40 object-cover rounded-lg mb-space-sm shadow-sm" data-alt="An Indian citizen at a clean modern citizen service center smiling while reviewing verified digital documents on a tablet, photorealistic editorial lighting, soft slate and amber hues, authentic Bharat public tech aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgYfvjxFWqTgZqj1CyNr9P8E1uXRQl65UL3G0dYdjm035Ae9UYJtVZv5_8zU0kTiJmqqPqh7lhG1PD6yz6xgF9h3PBpqRQBY3EytuV3ktbXGrA0dE2X6E71v18llr-UBgvAxKbXsl1YSCuKv09GH_f2xldzaTyQkinX8lJ2hhn-xbSWFuVJ5Mj7ZtQhElJ8BBZtHzF6iHC9lSIdxLcBj_aAVrG7lohEkoy3XilKNM"/>
+<span class="font-title-md text-label-lg font-bold text-on-surface">सहज, पारदर्शी और निशुल्क</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-1">
+            किसी भी बिचौलिए को नकद राशि न दें। कोई भी शंका होने पर निःशुल्क राष्ट्रीय हेल्पलाइन 1915 पर डायल करें।
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Modal for Adding Document (Client-side JS toggled) -->
+<div class="fixed inset-0 z-50 hidden bg-on-surface/40 backdrop-blur-sm flex items-center justify-center p-space-md" id="addDocModal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-lg w-full p-space-xl shadow-2xl relative">
+<div class="flex items-center justify-between mb-space-md">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">note_add</span>
+          नया दस्तावेज़ जोड़ें
+        </h3>
+<button class="p-1 rounded-full text-on-surface-variant hover:bg-surface-container transition-colors" onclick="closeAddDocModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="space-y-space-md" id="docForm" onsubmit="handleDocSubmit(event)">
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1">दस्तावेज़ का नाम</label>
+<input class="w-full h-12 px-space-md rounded-lg bg-surface-container-low text-on-surface border-0 focus:outline-none focus:ring-2 focus:ring-secondary font-body-md text-body-md" id="newDocName" placeholder="जैसे: पैन कार्ड, राशन कार्ड, दिव्यांग प्रमाण पत्र" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1">प्रकार / श्रेणी</label>
+<select class="w-full h-12 px-space-md rounded-lg bg-surface-container-low text-on-surface border-0 focus:outline-none focus:ring-2 focus:ring-secondary font-body-md text-body-md" id="newDocType">
+<option value="पहचान पत्र">पहचान पत्र (Identity Proof)</option>
+<option value="वित्तीय / आय">वित्तीय / आय (Financial / Income)</option>
+<option value="शैक्षणिक">शैक्षणिक (Educational)</option>
+<option value="भूमि / आवास">भूमि / आवास (Land / Residence)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1">प्रारंभिक स्थिति</label>
+<div class="grid grid-cols-3 gap-space-xs">
+<label class="flex items-center gap-2 p-space-xs rounded-lg bg-surface-container-low cursor-pointer font-label-md text-label-md text-on-surface">
+<input checked="" class="accent-secondary" name="docState" type="radio" value="उपलब्ध"/> उपलब्ध
+            </label>
+<label class="flex items-center gap-2 p-space-xs rounded-lg bg-surface-container-low cursor-pointer font-label-md text-label-md text-on-surface">
+<input class="accent-secondary" name="docState" type="radio" value="नहीं है"/> नहीं है
+            </label>
+<label class="flex items-center gap-2 p-space-xs rounded-lg bg-surface-container-low cursor-pointer font-label-md text-label-md text-on-surface">
+<input class="accent-secondary" name="docState" type="radio" value="प्रक्रिया में"/> प्रक्रिया में
+            </label>
+</div>
+</div>
+<div class="pt-space-sm flex justify-end gap-space-sm">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-container-highest transition-colors" onclick="closeAddDocModal()" type="button">
+            रद्द करें
+          </button>
+<button class="px-space-lg py-2.5 rounded-lg bg-secondary text-on-secondary font-label-lg text-label-lg hover:bg-secondary-container transition-all" type="submit">
+            सुरक्षित करें
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Interactive Modal for Adding Scheme Tracker Entry -->
+<div class="fixed inset-0 z-50 hidden bg-on-surface/40 backdrop-blur-sm flex items-center justify-center p-space-md" id="trackSchemeModal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-lg w-full p-space-xl shadow-2xl relative">
+<div class="flex items-center justify-between mb-space-md">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">add_task</span>
+          नई योजना ट्रैकर में जोड़ें
+        </h3>
+<button class="p-1 rounded-full text-on-surface-variant hover:bg-surface-container transition-colors" onclick="closeTrackSchemeModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="space-y-space-md" id="schemeForm" onsubmit="handleSchemeSubmit(event)">
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1">योजना का नाम</label>
+<input class="w-full h-12 px-space-md rounded-lg bg-surface-container-low text-on-surface border-0 focus:outline-none focus:ring-2 focus:ring-secondary font-body-md text-body-md" id="schemeName" placeholder="जैसे: आयुष्मान भारत कार्ड, पीएम आवास योजना" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1">आवेदन संदर्भ सं (Ref No.)</label>
+<input class="w-full h-12 px-space-md rounded-lg bg-surface-container-low text-on-surface border-0 focus:outline-none focus:ring-2 focus:ring-secondary font-body-md text-body-md" id="schemeRef" placeholder="जैसे: PMJAY99281" type="text"/>
+</div>
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1">वर्तमान चरण</label>
+<select class="w-full h-12 px-space-md rounded-lg bg-surface-container-low text-on-surface border-0 focus:outline-none focus:ring-2 focus:ring-secondary font-body-md text-body-md" id="schemeStage">
+<option value="1">चरण 1/5 (कागजात तैयार)</option>
+<option value="2">चरण 2/5 (प्रपत्र भरा गया)</option>
+<option value="3">चरण 3/5 (सत्यापन लंबित)</option>
+<option value="4">चरण 4/5 (समीक्षाधीन)</option>
+<option value="5">चरण 5/5 (स्वीकृत / लाभ जारी)</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-lg text-label-lg text-on-surface mb-1">व्यक्तिगत नोट / रिमाइंडर</label>
+<input class="w-full h-12 px-space-md rounded-lg bg-surface-container-low text-on-surface border-0 focus:outline-none focus:ring-2 focus:ring-secondary font-body-md text-body-md" id="schemeNotes" placeholder="जैसे: अगले सोमवार को बैंक जाना है" type="text"/>
+</div>
+<div class="pt-space-sm flex justify-end gap-space-sm">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-container-highest transition-colors" onclick="closeTrackSchemeModal()" type="button">
+            रद्द करें
+          </button>
+<button class="px-space-lg py-2.5 rounded-lg bg-secondary text-on-secondary font-label-lg text-label-lg hover:bg-secondary-container transition-all" type="submit">
+            योजना सहेजें
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Inline Micro-Interaction Javascript -->
+<script>
+    function showAddDocModal() {
+      const modal = document.getElementById('addDocModal');
+      if (modal) modal.classList.remove('hidden');
+    }
+
+    function closeAddDocModal() {
+      const modal = document.getElementById('addDocModal');
+      if (modal) modal.classList.add('hidden');
+    }
+
+    function showTrackSchemeModal() {
+      const modal = document.getElementById('trackSchemeModal');
+      if (modal) modal.classList.remove('hidden');
+    }
+
+    function closeTrackSchemeModal() {
+      const modal = document.getElementById('trackSchemeModal');
+      if (modal) modal.classList.add('hidden');
+    }
+
+    function handleDocSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('newDocName').value;
+      const type = document.getElementById('newDocType').value;
+      alert(`दस्तावेज़ "${name}" (${type}) सफलतापूर्वक आपकी चेकलिस्ट में जोड़ दिया गया है।`);
+      closeAddDocModal();
+      document.getElementById('docForm').reset();
+    }
+
+    function handleSchemeSubmit(e) {
+      e.preventDefault();
+      const sName = document.getElementById('schemeName').value;
+      alert(`योजना "${sName}" आपके व्यक्तिगत ट्रैकर में दर्ज कर दी गई है।`);
+      closeTrackSchemeModal();
+      document.getElementById('schemeForm').reset();
+    }
+
+    // Interactive Status Toggle Buttons on Existing Checklist items
+    document.addEventListener('DOMContentLoaded', () => {
+      const docRows = document.querySelectorAll('#checklistContainer > div');
+      docRows.forEach(row => {
+        const buttons = row.querySelectorAll('div.inline-flex button');
+        buttons.forEach((btn, index) => {
+          btn.addEventListener('click', () => {
+            buttons.forEach(b => {
+              b.className = 'px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md';
+            });
+            if (index === 0) {
+              btn.className = 'px-space-sm py-1.5 rounded-lg bg-on-tertiary-container text-on-tertiary font-label-md text-label-md font-semibold flex items-center gap-1 shadow-sm';
+            } else if (index === 1) {
+              btn.className = 'px-space-sm py-1.5 rounded-lg bg-error text-on-error font-label-md text-label-md font-semibold flex items-center gap-1 shadow-sm';
+            } else {
+              btn.className = 'px-space-sm py-1.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-semibold flex items-center gap-1 shadow-sm';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface pt-space-2xl pb-space-xl"><div class="max-w-[1240px] mx-auto px-gutter"><div class="p-space-lg rounded-xl bg-error-container text-on-error-container mb-space-2xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md"><div class="flex items-start gap-space-sm"><span class="material-symbols-outlined text-error text-[28px]">flip_camera_ios</span><div><h3 class="font-title-md text-title-md font-bold text-on-error-container">सावधान: धोखाधड़ी व फर्जी एजेंटों से बचें</h3><p class="font-body-sm text-body-sm text-on-error-container/90 mt-1">सरकारी योजनाओं के लाभ के लिए कभी किसी को पैसे न दें। योजनासेतु AI कभी ओटीपी (OTP), आधार पिन, या बैंकिंग विवरण नहीं मांगता।</p></div></div><div class="flex items-center gap-space-xs shrink-0"><span class="font-label-caps text-label-caps px-space-sm py-1 rounded bg-surface-container-lowest text-error font-bold uppercase">साइबर क्राइम हेल्पलाइन: 1930</span></div></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-2xl"><div class="space-y-space-sm"><div class="flex items-center gap-space-xs"><img alt="YojanaSetu AI Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UhEWbJaRbmo33IiD4QUADF86yuRiTrq3nJnH9YyvuU4-ybPjDTB9SfdlrowwB0UXYkmPrQtTPMojTw7eWjORW33gYYkqOnwO7W12GNa_AEGzlQOCX8_lb_GmyjjbCHRrwDlJSyTQdZmnnPPM8SRtxA-R-9TXdpo6I9gkRY5w4oGiTNvRVMMxekBXptp4nR_z9xzFRVY13Is-GUF0RHytYJ7_mFHw8oFR-Mi5P7B2A"/><span class="font-title-md text-title-md text-on-surface font-bold">योजनासेतु AI</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">नागरिकों को बिना बिचौलियों के केंद्र एवं राज्य सरकार की कल्याणकारी योजनाओं से जोड़ने वाला एक गैर-सरकारी, एआई-संचालित सेतु।</p><div class="flex items-center gap-space-xs"><span class="font-label-caps text-label-caps px-space-xs py-1 rounded bg-surface-container-high text-on-surface-variant">ओपन सोर्स डिजिटल पब्लिक इन्फ्रास्ट्रक्चर</span></div></div><div><h4 class="font-title-md text-title-md text-on-surface font-bold mb-space-md">आधिकारिक सरकारी पोर्टल</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-secondary flex items-center gap-1" href="https://www.india.gov.in" rel="noopener noreferrer" target="_blank"><span>National Portal of India</span><span class="material-symbols-outlined text-[14px]">open_in_new</span></a></li><li><a class="hover:text-secondary flex items-center gap-1" href="https://www.myscheme.gov.in" rel="noopener noreferrer" target="_blank"><span>myScheme Portal (MeitY)</span><span class="material-symbols-outlined text-[14px]">open_in_new</span></a></li><li><a class="hover:text-secondary flex items-center gap-1" href="https://dbtbharat.gov.in" rel="noopener noreferrer" target="_blank"><span>DBT Bharat (प्रत्यक्ष लाभ अंतरण)</span><span class="material-symbols-outlined text-[14px]">open_in_new</span></a></li><li><a class="hover:text-secondary flex items-center gap-1" href="https://www.digilocker.gov.in" rel="noopener noreferrer" target="_blank"><span>DigiLocker (डिजिलॉकर)</span><span class="material-symbols-outlined text-[14px]">open_in_new</span></a></li><li><a class="hover:text-secondary flex items-center gap-1" href="https://unifiedportal-mem.epfindia.gov.in" rel="noopener noreferrer" target="_blank"><span>UAN / EPFO Citizen Portal</span><span class="material-symbols-outlined text-[14px]">open_in_new</span></a></li></ul></div><div><h4 class="font-title-md text-title-md text-on-surface font-bold mb-space-md">नागरिक अधिकार व सहायता</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface" data-path="document-checker" href="#">दस्तावेज़ सत्यापन गाइड</a></li><li><a class="hover:text-on-surface" data-path="safety-and-fraud-protection" href="#">नकली योजनाओं की पहचान कैसे करें</a></li><li><a class="hover:text-on-surface" data-path="emergency-helpline" href="#">आपातकालीन सहायता नंबर (Helplines)</a></li><li><a class="hover:text-on-surface" data-path="all-schemes" href="#">श्रेणी अनुसार योजना निर्देशिका</a></li><li><a class="hover:text-on-surface" data-path="privacy-security" href="#">गोपनीयता नीति व डेटा संप्रभुता</a></li></ul></div><div><h4 class="font-title-md text-title-md text-on-surface font-bold mb-space-md">सुलभता एवं भाषा समर्थन</h4><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">यह प्लेटफ़ॉर्म WCAG 2.1 AA मानकों के अनुरूप, स्क्रीन रीडर फ्रेंडली और 12 भारतीय भाषाओं के लिए अनुकूलित बनाया गया है।</p><div class="flex flex-wrap gap-space-2xs"><span class="font-label-caps text-label-caps px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface">हिंदी</span><span class="font-label-caps text-label-caps px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface">English</span><span class="font-label-caps text-label-caps px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface">বাংলা</span><span class="font-label-caps text-label-caps px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface">मराठी</span><span class="font-label-caps text-label-caps px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface">తెలుగు</span><span class="font-label-caps text-label-caps px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface">தமிழ்</span></div></div></div><div class="pt-space-lg border-t border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left"><p class="font-label-md text-label-md text-on-surface-variant">© 2025 योजनासेतु AI (YojanaSetu). जन-कल्याण हेतु समर्पित स्वतंत्र नागरिक तकनीक पहल। भारत सरकार का आधिकारिक उपक्रम नहीं है।</p><div class="flex items-center gap-space-md font-label-md text-label-md text-on-surface-variant"><a class="hover:text-on-surface" data-path="privacy-security" href="#">गोपनीयता</a><a class="hover:text-on-surface" data-path="terms-of-service" href="#">उपयोग की शर्तें</a><a class="hover:text-on-surface" data-path="disclaimer" href="#">अस्वीकरण (Disclaimer)</a></div></div></div></footer></body></html>
